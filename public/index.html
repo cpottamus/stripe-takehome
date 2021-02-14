@@ -2,14 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <meta
       name="description"
       content="Web site created using create-react-app"
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="apple-touch-icon" href="../static/hotdogs/hotdog-1.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -27,8 +28,22 @@
     <title>React App</title>
   </head>
   <body>
+    <br/>
+    <div class="container grid-lg">
+    <header class="navbar">
+            <section class="navbar-section">
+              <a href="/" class="btn btn-link navbar-brand mr-2"><b style="font-size: 42pt;">🌭</b></a>
+            </section>
+            <section class="navbar-center">
+                    <a href="/"><b style="color: #5755d9;">hotdog pins</b></a>
+            </section>
+    </header>
+
+
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+
+
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -39,5 +54,11 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+  <div class="footer container grid-lg" id="copyright" style="color: #696b70;">
+    <p>Completed with <span class="text-error">🌭</span> by Carson Potter, after a substantial headstart from <a href="https://twitter.com/dps" target="_blank">dps</a>. &copy; 2020</p>
+  </div>
   </body>
 </html>
+
+
+<!-- May need to move the header/body layout HTML into a react file as components that render (Header.jsx // Footer.jsx) -->
