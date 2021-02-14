@@ -277,7 +277,7 @@ class SpectreAutocomplete extends Component {
               }
             >
               <button className="btn btn-primary" style={{marginTop: `4px`}}>
-                Buy ${12 * this.state.selectedHotdogs.length} &rarr;
+                Buy for ${12 * this.state.selectedHotdogs.length} &rarr;
               </button>
             </a>
             )}
