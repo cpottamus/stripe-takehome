@@ -40,3 +40,20 @@ body {
  	padding-top: 3%;
  }
 
+ .panel {
+ 	border: none;
+ }
+
+ .hero {
+ 	padding-top: 0em;
+ }
+
+#leftCheckout {
+	float: left;
+	width: 30%;
+}
+
+#rightCheckout {
+	float: right;
+	width: 70%;
+}

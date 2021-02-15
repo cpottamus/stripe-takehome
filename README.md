@@ -8,6 +8,6 @@ Design is minimal. Hot Dogs are plentiful. Enjoy!
 
 Please run `yarn install` or `npm install` to collect all dependencies for this project.
 
-Update the SLDKFJLSDKFJ STUFF HERE AROUND KEY MGMT
+Create a .env file at '/stripe-takehome/' and add your Stripe Keys: STRIPE_SECRET_API_KEY for your secret/server key, and STRIPE_CLIENT_API_KEY for your client. (Not the most secure, but not hardcoded).
 
 Run `npm run dev` to start the server and client app at once. Head over to `localhost:3000` and take a gander!

@@ -22,7 +22,7 @@ export default function Shipping(props) {
                          ('phone', '4645553633')];
 
 	return (
-		<div className="columns" id="shipping">
+		<div className="panel" id="shipping">
             <div className="panel-header">
               <div className="panel-title">
                 <h4>Your <span>🌭</span> Pins</h4>
@@ -49,7 +49,6 @@ export default function Shipping(props) {
 
 	)
 }
-
 
 export const HotdogImages = props => {
 	const imgs = props.dogs.map(({ hotdog, availableHotdogsIndex }, i) => {
@@ -101,6 +100,7 @@ const ShippingInfoForm = props => {
 		        onChange={formik.handleChange}
 		        value={formik.values.firstName}
 		        placeholder= {props.cardholderFields[0]}
+		        required
        		/>
        	   </div>
        	   <div className="col-3 col-sm-12">
@@ -114,6 +114,7 @@ const ShippingInfoForm = props => {
 		        onChange={formik.handleChange}
 		        value={formik.values.lastName}
 		        placeholder= {props.cardholderFields[1]}
+		        required
        		/>
        		</div>
        		<div className="col-3 col-sm-12">
@@ -127,6 +128,7 @@ const ShippingInfoForm = props => {
 		        onChange={formik.handleChange}
 		        value={formik.values.addr1}
 		        placeholder= {props.cardholderFields[2]}
+		        required
        		/>
        		</div>
        		<div className="col-3 col-sm-12">
@@ -140,6 +142,7 @@ const ShippingInfoForm = props => {
 		        onChange={formik.handleChange}
 		        value={formik.values.city}
 		        placeholder= {props.cardholderFields[3]}
+		        required
        		/>
        		</div>
        		<div className="col-3 col-sm-12">
@@ -153,6 +156,7 @@ const ShippingInfoForm = props => {
 		        onChange={formik.handleChange}
 		        value={formik.values.state}
 		        placeholder= {props.cardholderFields[4]}
+		        required
        		/>
        		</div>
        		<div className="col-3 col-sm-12">
@@ -166,6 +170,7 @@ const ShippingInfoForm = props => {
 		        onChange={formik.handleChange}
 		        value={formik.values.zip}
 		        placeholder= {props.cardholderFields[5]}
+		        required
        		/>
        		</div>
        		<div className="col-3 col-sm-12">
@@ -179,6 +184,7 @@ const ShippingInfoForm = props => {
 		        onChange={formik.handleChange}
 		        value={formik.values.email}
 		        placeholder= {props.cardholderFields[6]}
+		        required
        		/>
        		</div>
        		<div className="col-3 col-sm-12">
@@ -192,6 +198,7 @@ const ShippingInfoForm = props => {
 		        onChange={formik.handleChange}
 		        value={formik.values.phone}
 		        placeholder= {props.cardholderFields[7]}
+		        required
        		/>
        		</div>
    		   </div>

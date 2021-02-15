@@ -5,7 +5,7 @@ import { Router, Switch, Route } from "react-router-dom";
 
 import Shipping from "./components/Shipping";
 import Checkout from "./components/Checkout";
-import { HomePage } from "./index";
+import { HomePage } from "./HomePage";
 import history from './history';
 
 export default function Routes(props) {
