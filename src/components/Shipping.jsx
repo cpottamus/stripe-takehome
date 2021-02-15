@@ -1,8 +1,5 @@
-import React, { Component } from 'react';
-import ReactDOM, { Render } from 'react-dom';
-import '../index.css'; // Maybe add shipping CSS
-// import App from './App';
-// import { useLocation } from "react-router-dom";
+import React from 'react';
+import '../index.css';
 import history from '../history';
 import { useFormik } from "formik";
 
@@ -10,7 +7,7 @@ import { useFormik } from "formik";
 export default function Shipping(props) {
 	let selectedHotdogs = [];
 	let amt = 404;
-	console.log(props.location.state)
+
 	if (props.location.state != null) {
 		selectedHotdogs = props.location.state.selectedHotdogs
 		amt = selectedHotdogs.length * 12;
@@ -23,7 +20,6 @@ export default function Shipping(props) {
                          ('zip', '94101'),
                          ('email', 'holdthemustard@hotdog.com'),
                          ('phone', '4645553633')];
-    const cardholderData = []
 
 	return (
 		<div className="columns" id="shipping">
@@ -61,6 +57,8 @@ export const HotdogImages = props => {
 			<img
 				style={{ margin: "auto", maxWidth: 150 }}
 	            src={process.env.PUBLIC_URL + '../previews/' + hotdog + ".png"}
+	            alt="hot diggity dogs"
+	            key= {i}
 	        />
 		);
 	});
